@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+.Header{
+    color: darkred;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+.container{
+    background-color:aqua;
+    text-align: justify;
+    margin-top: 58px;
+    font-size: large;
+    font-style: italic;
+
+}
+.list{
+    margin-top: 20px;
+    border: 2px solid red;
+}
