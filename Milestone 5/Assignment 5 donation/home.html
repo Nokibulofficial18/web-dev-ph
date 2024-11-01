@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"
+    />
+
+    <!-- tailwind + daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/6ac8fc23da.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind config  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary : '#B4F461',
+                secondary : '#1111111A'
+              },
+              fontFamily : {
+                lexend : ["Lexend","sans-serif"]
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend">
+    <header class="md:container mx-auto  sticky backdrop:blur-3xl z-10 backdrop:opacity-50 top-0  bg-[#F9F7F3] pb-5">
+        <nav>
+            <nav class="pt-10 mb-10">
+                <div class="navbar w-10/12 mx-auto">
+                    <div class="navbar-start">
+    
+                      <a href="./index.html" class="btn btn-primary bg-primary font-semi-bold text-black text-xl border-transparent hover:bg-transparent hover:text-primary hover:border-black">Home</a>
+                    </div>
+                    <div class="navbar-center  hidden md:flex lg:gap-5">
+                        <div>
+                            <img src="./assets/logo.png" alt="">
+                        </div>
+                        <h1 class="font-bold text-xl">Donate Bangladesh</h1>
+                    </div>
+                   <div class="flex items-end gap-5 navbar-end">
+                    <button class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:bg-transparent hover:text-primary">
+                        <img src="./assets/coin.png" alt="">
+                        <h2 class="font-medium text-base md:text-lg text-[#111111B3]"><span id="initital-money">5500</span> BDT</h2>
+                    </button>
+                   </div>
+                  </div>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <!-- faq section  -->
+        <section class="md:container mx-auto mb-12 lg:mb-16 pt-8">
+            <div class="text-center mb-14">
+                <h1 class="font-bold text-4xl">
+                    Frequently Asked <span class="text-primary">Questions</span>
+                </h1>
+            </div>
+            <div class="mx-auto flex flex-col md:flex-row justify-between px-3 xl:px-24 items-center">
+                <div class="space-y-10 w-full">
+                    <div class="collapse collapse-arrow border-2 border-secondary">
+                        <input type="checkbox">
+                        <div class="collapse-title text-2xl font-semibold">
+                            What is Document Object Model (DOM)?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="font-medium text-gray-600">
+                                The DOM (Document Object Model) is a programming interface that represents the structure of a webpage as a tree of objects. It allows scripts (like JavaScript) to dynamically change, update, and interact with the content and layout of the page without reloading it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow border-2 border-secondary">
+                        <input type="checkbox">
+                        <div class="collapse-title text-2xl font-semibold">
+                            How do you select an element from the DOM?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="font-medium text-gray-600">
+                                To select an element from the DOM in JavaScript, I can use: <br>
+
+                                By ID: document.getElementById("id") <br>
+                                By class: document.getElementsByClassName("class") <br>
+                                By tag name: document.getElementsByTagName("tag") <br>
+                                By CSS selector: document.querySelector("selector") (for one) or document.querySelectorAll("selector") (for all) <br>
+                                These let me target and manipulate elements in the DOM.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow border-2 border-secondary">
+                        <input type="checkbox">
+                        <div class="collapse-title text-2xl font-semibold">
+                            What is event delegation in the context of the DOM, and why is it useful?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="font-medium text-gray-600">
+                                **Event delegation** is a technique where a single event listener is attached to a parent element to manage events from its child elements. This leverages event bubbling, reducing the need for multiple event listeners. <br>
+
+                                ### Benefits: <br>
+                                - **Better performance** (fewer event listeners). <br>
+                                - **Works with dynamically added elements.** <br>
+                                - **Simplifies code.**
+                                
+                                Example: One listener on a parent handles clicks from all its children.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow border-2 border-secondary">
+                        <input type="checkbox">
+                        <div class="collapse-title text-2xl font-semibold">
+                            How do you manipulate an element's attributes and styles using the DOM?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="font-medium text-gray-600">
+                                To manipulate an element's attributes and styles in the DOM: <br>
+
+                                ### **Attributes:** <br>
+                                - **Get:** `element.getAttribute("attributeName")` <br>
+                                - **Set:** `element.setAttribute("attributeName", "value")` <br>
+                                - **Remove:** `element.removeAttribute("attributeName")` <br>
+                                
+                                ### **Styles:** <br>
+                                - **Set style:** `element.style.propertyName = "value"` (e.g., `element.style.color = "blue"`) <br>
+                                Example: One listener on a parent handles clicks from all its children.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

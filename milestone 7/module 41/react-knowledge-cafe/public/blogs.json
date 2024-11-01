@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co.com/gT8qSkq/flat-lay-workstation-with-copy-space-laptop.jpg",
+      "title": "The Journey Beyond",
+      "author": "Ava Thompson",
+      "author_img": "https://i.ibb.co.com/JQr5zWv/Black-and-Gold-Simple-Business-Man-Linked-In-Profile-Picture.png",
+      "posted_date": "2024-10-15",
+      "reading_time": 8,
+      "hashtags": ["#adventure", "#fantasy", "#exploration"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co.com/gT8qSkq/flat-lay-workstation-with-copy-space-laptop.jpg",
+      "title": "Whispers in the Wind",
+      "author": "Liam Rodriguez",
+      "author_img": "https://i.ibb.co.com/JQr5zWv/Black-and-Gold-Simple-Business-Man-Linked-In-Profile-Picture.png",
+      "posted_date": "2024-09-10",
+      "reading_time": 6,
+      "hashtags": ["#mystery", "#thriller", "#suspense"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co.com/gT8qSkq/flat-lay-workstation-with-copy-space-laptop.jpg",
+      "title": "Through the Silver Gate",
+      "author": "Sophia Chen",
+      "author_img": "https://i.ibb.co.com/JQr5zWv/Black-and-Gold-Simple-Business-Man-Linked-In-Profile-Picture.png",
+      "posted_date": "2024-10-01",
+      "reading_time": 10,
+      "hashtags": ["#sci-fi", "#space", "#technology"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co.com/gT8qSkq/flat-lay-workstation-with-copy-space-laptop.jpg",
+      "title": "Echoes of Time",
+      "author": "Ethan Johnson",
+      "author_img": "https://i.ibb.co.com/JQr5zWv/Black-and-Gold-Simple-Business-Man-Linked-In-Profile-Picture.png",
+      "posted_date": "2024-08-20",
+      "reading_time": 12,
+      "hashtags": ["#historical", "#drama", "#war"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co.com/gT8qSkq/flat-lay-workstation-with-copy-space-laptop.jpg",
+      "title": "Beneath the Shadowed Peaks",
+      "author": "Mia Patel",
+      "author_img": "https://i.ibb.co.com/JQr5zWv/Black-and-Gold-Simple-Business-Man-Linked-In-Profile-Picture.png",
+      "posted_date": "2024-09-25",
+      "reading_time": 7,
+      "hashtags": ["#horror", "#darkfantasy", "#gothic"]
+    }
+  ]
+  

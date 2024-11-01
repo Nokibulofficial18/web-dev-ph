@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_image": "https://i.ibb.co.com/z6d7j5G/stir-fry-chicken-sweet-peppers-green-beans.jpg",
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir Fry",
+      "description": "A quick and easy chicken stir fry with vegetables and soy sauce.",
+      "ingredients": ["500 g chicken breast", "2 tbsp soy sauce", "1 tbsp sesame oil", "200 g broccoli", "1 red bell pepper"],
+      "preparing_time": "25",
+      "calories": "350"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/h9B9PdZ/top-view-spaghetti-bolognese-white-plate.jpg",
+      "recipe_id": 2,
+      "recipe_name": "Spaghetti Bolognese",
+      "description": "Classic Italian pasta with rich meat sauce.",
+      "ingredients": ["400 g ground beef", "1 onion", "2 cloves garlic", "400 g tomato sauce", "300 g spaghetti"],
+      "preparing_time": "45",
+      "calories": "600"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/LCFZtz2/chicken-stir-fried-chili-along-with-bell-pepper-tomatoes-carrots.jpg",
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Curry",
+      "description": "A flavorful and spicy vegetable curry with coconut milk.",
+      "ingredients": ["200 g potatoes", "1 carrot", "1 zucchini", "200 ml coconut milk", "2 tbsp curry powder"],
+      "preparing_time": "40",
+      "calories": "250"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/mRbtFq6/grilled-salmon-fillet-with-asparagus-broccoli-generated-by-ai.jpg",
+      "recipe_id": 4,
+      "recipe_name": "Grilled Salmon",
+      "description": "A healthy grilled salmon served with lemon and herbs.",
+      "ingredients": ["2 salmon fillets", "1 lemon", "1 tbsp olive oil", "2 cloves garlic", "fresh herbs"],
+      "preparing_time": "20",
+      "calories": "400"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/2c55vrG/vegetarian-risotto-with-fresh-mushrooms-parmesan-cheese-generated-by-ai.jpg",
+      "recipe_id": 5,
+      "recipe_name": "Mushroom Risotto",
+      "description": "A creamy risotto with mushrooms and Parmesan cheese.",
+      "ingredients": ["200 g arborio rice", "100 g mushrooms", "1 onion", "50 g Parmesan", "500 ml vegetable broth"],
+      "preparing_time": "35",
+      "calories": "480"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/PhmycKF/caesar-salad-with-fried-shrimps.jpg",
+      "recipe_id": 6,
+      "recipe_name": "Caesar Salad",
+      "description": "A classic Caesar salad with chicken, croutons, and Caesar dressing.",
+      "ingredients": ["1 romaine lettuce", "100 g chicken breast", "50 g croutons", "30 g Parmesan", "Caesar dressing"],
+      "preparing_time": "15",
+      "calories": "300"
+    }
+  ]
+  

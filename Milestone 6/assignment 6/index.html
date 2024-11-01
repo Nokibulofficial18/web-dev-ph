@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy</title>
+    <!-- font awesome cdn  -->
+    <script
+      src="https://kit.fontawesome.com/6ac8fc23da.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- daisy ui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary : "#0E7A81",
+              secondary : "#131313"
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="bg-base-100  w-10/12 mx-auto">
+        <!-- navbar starts  -->
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start mr-10">
+
+                  <a class="btn font-extrabold text-3xl"><img src="./images/logo.webp" alt=""> Peddy</a>
+                </div>
+                <div class="navbar-center pl-20 hidden lg:flex ">
+                  <ul class="menu menu-horizontal px-1 space-x-8 font-semibold grid grid-cols-5">
+                    <li class="hover:bg-primary py-2 rounded text-black hover:text-secondary w-full"><a href="#" class="font-semibold text-lg transition-colors duration-200 ease-in-out">Home</a></li>
+                    <li class="hover:bg-primary py-2 rounded text-black hover:text-secondary w-full"><a href="#" class="font-semibold text-lg transition-colors duration-200 ease-in-out">Shop</a></li>
+                    <li class="hover:bg-primary py-2 rounded text-black hover:text-secondary w-full"><a href="#" class="font-semibold text-lg transition-colors duration-200 ease-in-out">Contact</a></li>
+                  </ul>
+                </div>
+               <div class="flex items-end gap-5 navbar-end">
+                <button class="btn btn-primary bg-transparent rounded-full text-secondary border-black hover:border-primary hover:bg-transparent hover:text-primary">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button id="menu-btn" class="sm:hidden block">
+                    <i class="fa-solid fa-bars sm:hidden block text-2xl bg-primary px-3 py-2 rounded"></i>
+                    <i id="close-icon" class="fa-solid fa-xmark sm:block hidden text-2xl bg-primary px-3 py-2 rounded"></i>
+                </button>
+               </div>
+               <ul id="mobileMenu" class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-2xl bg-slate-200 text-center w-full mx-auto z-50">
+                <li class="hover:bg-primary py-2 rounded text-black hover:text-secondary w-full"><a href="#" class="font-semibold text-lg transition-colors duration-200 ease-in-out">Home</a></li>
+                <li class="hover:bg-primary py-2 rounded text-black hover:text-secondary w-full"><a href="#" class="font-semibold text-lg transition-colors duration-200 ease-in-out">Shop</a></li>
+                <li class="hover:bg-primary py-2 rounded text-black hover:text-secondary w-full"><a href="#" class="font-semibold text-lg transition-colors duration-200 ease-in-out">Contact</a></li>
+               </ul>
+              </div>
+        </nav>
+        <!-- navbar ends here -->
+        <!-- hero section starts  -->
+        <section class="py-5 lg:py-10">
+            <div class="flex flex-col items-center">
+                <div class="text-center space-y-5">
+                    <h3 class="text-xl font-bold text-secondary/50 text-center">Bringing Family Together❤️🔥</h3>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-secondary sm:w-3/4 sm:mx-auto leading-snug">Your Path to Adoption Starts Here</h1>
+                    <p class="text-secondary sm:w-3/4 sm:mx-auto text-justify sm:text-center">
+                        Whether you're looking for a loyal dog, a playful cat, or a small animal companion, we've made it easy to find the perfect match. Join us in giving a deserving pet a second chance at a happy life. Start your adoption journey today!
+                    </p>                    
+                    <br>
+                    <br>
+                    <a href="#main-section" class="px-6 py-3 bg-primary rounded-xl text-lg md:text-xl font-bold text-center text-white hover:bg-primary/90 transition-colors duration-200 ease-in-out">View More</a>
+                </div>
+                <div class="pt-6 lg:pt-12">
+                    <img src="./images/pet.webp" alt="pics_of_pets">
+                </div>
+            </div>
+        </section>
+        <!-- hero section ends  -->
+    </header>
+    <!-- header ends here  -->
+    <!-- main section starts here  -->
+    <main id="main-section" class="w-10/12 mx-auto">
+        <!-- category section starts  -->
+        <section class="py-5 lg:py-10">
+            <!-- title -->
+            <div class="flex flex-col items-center">
+                <div class="text-center space-y-6">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl text-secondary font-extrabold">Adopt Your Best Friend</h2>
+                    <p class="text-secondary text-justify sm:w-3/4 sm:mx-auto sm:text-center">
+                        Every pet deserves a loving home, and your new best friend is waiting for you. Adopting a pet is a life-changing experience, offering unconditional love, companionship, and endless joy. Start your journey today and make a difference in their life—and yours.
+                    </p>
+                </div>
+            </div>
+            <!-- Category items using api -->
+            <div class="pt-6 lg:pt-12">
+                <div id="category-btn-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+                </div>
+            </div>
+        </section>
+        <!-- category section ends  -->
+        <!-- card section starts  -->
+        
+        
+        <section class="py-5 lg:py-10">
+            <!-- best deals + sort btn -->
+            <div class="flex justify-between items-center">
+                <h3 class="text-xl sm:text-3xl font-extrabold text-secondary capitalize">Best Deals For You</h3>
+                <button id="sort-btn" class="px-4 sm:px-8 py-4 bg-primary rounded-xl text-lg md:text-xl font-bold text-center text-white hover:bg-primary/80 transition-colors duration-200 ease-in-out">Sort by Price</button>
+            </div>
+            <!-- here comes the cards  -->
+            <div class="pt-6 lg:pt-12 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-7">
+                <!-- cards from api -->
+                <div id="Cards-container" class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border rounded-xl p-3 md:p-7">
+                    <!-- will add from api  -->
+                </div>
+                <div class="col-span-1">
+                    <div id="liked-cards-container" class="grid grid-cols-2 gap-5 border-2 rounded-xl max-h-screen overflow-y-auto">
+                        <!-- will add liked cards -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card section ends  -->
+    </main>
+    <!-- modals  -->
+    <!-- congrats for adopt modal  -->
+    <dialog id="Congrats-modal" class="modal modal-middle">
+        <div class="modal-box p-10">
+            <div class="text-center space-y-4">
+                <i class="fa-solid fa-handshake text-4xl text-secondary" aria-hidden="true"></i>
+                <h3 class="text-4xl font-extrabold text-secondary">Congrats!</h3>
+                <p class="text-xl text-secondary/60 capitalize">Adaption Process is Starting For Your Pet</p>
+                <h1 id="Count-down" class="text-6xl font-extrabold text-secondary">3</h1>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button id="close-btn" class="btn hidden">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- pet details modal  -->
+    <dialog id="Pet-details-modal" class="modal modal-middle">
+        <div id="pet-details-container" class="modal-box max-w-xl">
+            <!-- pet details will come from api -->
+        </div>
+    </dialog>
+    <!-- main section ends here  -->
+    <script src="script/script.js"></script>
+
+    <!-- footer starts here  -->
+    <footer class="bg-secondary mt-7">
+        <section class="w-10/12 mx-auto py-12 sm:py-24">
+            <div class="flex flex-col sm:flex-row justify-between gap-12">
+                <div class="space-y-4 sm:space-y-6">
+                    <div>
+                        <a href="#" class="flex items-center gap-3">
+                            <img src="./images/logo.webp" alt="">
+                            <span class="text-3xl font-extrabold text-white">Peddy</span>
+                        </a>
+                    </div>
+                    <div class="text-white/60 space-y-2">
+                        <p>Location: av. Washington 165, NYCA 54003</p>
+                        <p>Phone: +31 85 964 47 25</p>
+                        <p>Email: info@peddy.com</p>
+                        <p>Opening hours: 9.00 AM - 5.00 PM</p>
+                    </div>
+                    <div class="text-white/80 text-2xl space-x-6">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-1 text-white/60">
+                    <h5 class="text-xl font-bold text-white/80 pb-2">Useful Links</h5>
+
+                    <a href="#" class="link link-hover">Home</a>
+                    <a href="#" class="link link-hover">About Us</a>
+                    <a href="#" class="link link-hover">Animal</a>
+                    <a href="#" class="link link-hover">Foundation</a>
+                    <a href="#" class="link link-hover">Contact</a>
+                </div>
+                <form class="text-white/80 space-y-4 sm:space-y-6">
+                    <h5 class="text-xl font-bold text-white/80 pb-2">Drop a Message</h5>
+                    <input type="text" class="w-full px-5 py-3 bg-white/5 rounded-xl" placeholder="Enter your email">
+                    <br>
+                    <button class="w-full px-6 py-4 bg-primary rounded-xl text-2xl font-bold">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </footer>
+ </body>
+</html>
